@@ -1,4 +1,4 @@
-/* import React from 'react';
+import React from 'react';
 
 import { yupResolver } from '@hookform/resolvers/yup';
 import { Grid } from '@mui/material';
@@ -26,11 +26,7 @@ const validarPost = yup.object().shape({
 function Criar() {
     const history = useHistory();
 
-    const {
-        register,
-        handleSubmit,
-        formState: { errors },
-    } = useForm({
+    const { register, handleSubmit } = useForm({
         resolver: yupResolver(validarPost),
     });
 
@@ -148,4 +144,3 @@ function Criar() {
 }
 
 export default Criar;
- */
